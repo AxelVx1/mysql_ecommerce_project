@@ -41,7 +41,7 @@ Below are some example SQL queries that provide insightful analysis of the data 
 ### 1. Top-Selling Products
 This query retrieves the top-selling products by total sales (based on the quantity sold and unit price).
 
-```sql
+'''sql
 SELECT Products.ProductName, SUM(OrderItems.Quantity) AS TotalQuantitySold, 
        SUM(OrderItems.Quantity * OrderItems.UnitPrice) AS TotalSales
 FROM OrderItems
@@ -51,7 +51,7 @@ ORDER BY TotalSales DESC;
 
 ### 2. Total Sales per Customer
 
-,,,sql
+'''sql
 SELECT Customers.FirstName, Customers.LastName, SUM(Orders.OrderTotal) AS TotalSpent
 FROM Orders
 JOIN Customers ON Orders.CustomerID = Customers.CustomerID
@@ -60,7 +60,7 @@ ORDER BY TotalSpent DESC;
 
 ### 3. Monthly Sales Report (For this sample data the value is a total of all sales since they all happened in a one month period)
 
-,,,sql
+'''sql
 SELECT MONTH(OrderDate) AS Month, YEAR(OrderDate) AS Year, 
        SUM(OrderTotal) AS TotalSales
 FROM Orders
