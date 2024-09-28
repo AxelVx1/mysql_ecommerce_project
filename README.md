@@ -48,3 +48,22 @@ FROM OrderItems
 JOIN Products ON OrderItems.ProductID = Products.ProductID
 GROUP BY Products.ProductID
 ORDER BY TotalSales DESC;
+
+### 2. Total Sales per Customer
+
+,,,sql
+SELECT Customers.FirstName, Customers.LastName, SUM(Orders.OrderTotal) AS TotalSpent
+FROM Orders
+JOIN Customers ON Orders.CustomerID = Customers.CustomerID
+GROUP BY Customers.CustomerID
+ORDER BY TotalSpent DESC;
+
+### 3. Monthly Sales Report (For this sample data the value is a total of all sales since they all happened in a one month period)
+
+,,,sql
+SELECT MONTH(OrderDate) AS Month, YEAR(OrderDate) AS Year, 
+       SUM(OrderTotal) AS TotalSales
+FROM Orders
+GROUP BY YEAR(OrderDate), MONTH(OrderDate)
+ORDER BY Year, Month;
+
