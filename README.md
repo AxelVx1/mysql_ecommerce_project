@@ -43,7 +43,7 @@ The database schema consists of the following tables:
 
 The SQL script for creating the database tables can be found [here](create_tables.sql).
 
-The sample data used to populate the database can be found [here](insert_sample_data.sql). This file contains the data for customers, products, categories, orders, order items, and payments, allowing for testing and analysis.
+The sample data used to populate the database can be found [here](sample_data.sql). This file contains the data for customers, products, categories, orders, order items, and payments, allowing for testing and analysis.
 
 ## Example SQL Queries
 
