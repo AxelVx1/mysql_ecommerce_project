@@ -1,4 +1,12 @@
 # E-Commerce Sales and Inventory Management System
+## Glossary
+- [Project Overview](#project-overview)
+- [Database Design](#database-design)
+- [Tables and Sample Data](#tables-and-sample-data)
+- [Example SQL Queries](#example-sql-queries)
+- [Conclusion](#conclusions--future-imporvements)
+
+---
 
 ## Project Overview
 In this project I create an **E-Commerce Sales and Inventory Management System** designed to track customers, products, orders, payments, and inventory. I used **QuickDBD** to first visualize what I wanted the database schema to look like and then built it using **MySQL** in **Visual Studio** to simulate an e-commerce backend.
@@ -73,7 +81,7 @@ GROUP BY YEAR(OrderDate), MONTH(OrderDate)
 ORDER BY Year, Month;
 ```
 
-## Conclusion
+## Conclusions & Future Improvements
 
 Throughout the creation of this E-Commerce Sales and Inventory Management System, I gained valuable insights into both **database design** and **SQL query optimization**. Here are a few lessons I learned while completing this project:
 
@@ -85,8 +93,6 @@ I realized how powerful SQL can be for analyzing business data. By using simple 
 
 ### The Value of Sample Data
 Inserting randomized sample data gave me a much better understanding of how real-world data might look in this system. It also allowed me to stress test the database with various queries and edge cases.
-
-### Future Improvements & Conclusion
 
 I believe this project can be improved further with the addition of interactive dashboards. By using tools like Tableau and Power BI, I can create visualizations that provide real-time insights into the data. These dashboards would streamline the data analysis process by allowing users to interact with visual data directly, without needing to write SQL queries.
 This addition would enhance the project's usability, turning it into a more dynamic business intelligence tool where data-driven decisions can be made quickly and effectively. Integrating dashboards would also make it easier to share insights across teams and departments.
