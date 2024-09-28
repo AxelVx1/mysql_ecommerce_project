@@ -5,7 +5,7 @@
 ## Project Overview
 In this project I create an **E-Commerce Sales and Inventory Management System** designed to track customers, products, orders, payments, and inventory. I used **QuickDBD** to first visualize what I wanted the database schema to look like and then built it using **MySQL** in **Visual Studio** to simulate an e-commerce backend.
 
-The project uses key database design concepts like normalization, table relationships, and the use of SQL to query and analyze the data.
+The project uses key database design concepts like normalization, table relationships, and SQL to query and analyze the data.
 
 ### Key Features:
 - **Customer Management**: Keep track of customer information including names, emails, addresses, and phone numbers.
@@ -30,7 +30,8 @@ The database schema consists of the following tables:
 
 ## Tables and Sample Data
 
-### 1. Customers
-**Description**: Stores customer information like names, emails, and addresses.
+The SQL script for creating the database tables can be found [here](create_tables.sql).
 
-Sample Data:
+Next, I utilized ChatGPT to create randomized sample data that I could then add to my tables and later analyze.
+
+Sample data created by ChatGPT:
