@@ -18,7 +18,7 @@ The project uses key database design concepts like normalization, table relation
 
 Below is the QuickDBD schema, which illustrates the relationships between the tables:
 
-![E-Commerce ERD]()
+![E-Commerce ERD](QuickDBD_Shcema.png)
 
 The database schema consists of the following tables:
 
