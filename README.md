@@ -32,6 +32,19 @@ The database schema consists of the following tables:
 
 The SQL script for creating the database tables can be found [here](create_tables.sql).
 
-Next, I utilized ChatGPT to create randomized sample data that I could then add to my tables and later analyze.
+The sample data used to populate the database can be found [here](insert_sample_data.sql). This file contains the data for customers, products, categories, orders, order items, and payments, allowing for testing and analysis.
 
-Sample data created by ChatGPT:
+## Example SQL Queries
+
+Below are some example SQL queries that provide insightful analysis of the data in the e-commerce system.
+
+### 1. Top-Selling Products
+This query retrieves the top-selling products by total sales (based on the quantity sold and unit price).
+
+```sql
+SELECT Products.ProductName, SUM(OrderItems.Quantity) AS TotalQuantitySold, 
+       SUM(OrderItems.Quantity * OrderItems.UnitPrice) AS TotalSales
+FROM OrderItems
+JOIN Products ON OrderItems.ProductID = Products.ProductID
+GROUP BY Products.ProductID
+ORDER BY TotalSales DESC;
