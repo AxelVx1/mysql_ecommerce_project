@@ -4,7 +4,7 @@
 - [Database Design](#database-design)
 - [Tables and Sample Data](#tables-and-sample-data)
 - [Example SQL Queries](#example-sql-queries)
-- [Conclusion](#conclusions--future-imporvements)
+- [Conclusion](#conclusions--future-improvements)
 
 ---
 
