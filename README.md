@@ -62,6 +62,7 @@ ORDER BY TotalSales DESC;
 ```
 
 ### 2. Total Sales per Customer
+This query shows the total amount each customer has spent across all their orders.
 
 ```sql
 SELECT Customers.FirstName, Customers.LastName, SUM(Orders.OrderTotal) AS TotalSpent
@@ -71,7 +72,9 @@ GROUP BY Customers.CustomerID
 ORDER BY TotalSpent DESC;
 ```
 
-### 3. Monthly Sales Report (This query generates a monthly breakdown of sales. For this specific sample data, the total is calculated for one month, but it can be applied to larger datasets to identify sales trends across different time periods.)
+### 3. Monthly Sales Report 
+This query generates a monthly breakdown of total sales revenue for each month in the dataset.
+(This query generates a monthly breakdown of sales. For this specific sample data, the total is calculated for one month, but it can be applied to larger datasets to identify sales trends across different time periods.)
 
 ```sql
 SELECT MONTH(OrderDate) AS Month, YEAR(OrderDate) AS Year, 
@@ -88,11 +91,13 @@ Throughout the creation of this E-Commerce Sales and Inventory Management System
 ### Database Normalization
 Designing a database requires planning to ensure that the tables are properly normalized. This means reducing data redundancy to make sure that the relationships between entities (like Customers, Orders, and Products) are defined using foreign keys. This structure made querying the data more efficient.
 
-### The Power of Data Analysis
+### SQL Data Analysis
 I realized how powerful SQL can be for analyzing business data. By using simple functions like `SUM()` and `COUNT()`, I was able to extract meaningful insights, such as top-selling products and monthly sales trends. These types of queries are essential for businesses looking to make data-driven decisions.
 
-### The Value of Sample Data
+### Use of Sample Data
 Inserting randomized sample data gave me a much better understanding of how real-world data might look in this system. It also allowed me to stress test the database with various queries and edge cases.
+
+### Improvements
 
 I believe this project can be improved further with the addition of interactive dashboards. By using tools like Tableau and Power BI, I can create visualizations that provide real-time insights into the data. These dashboards would streamline the data analysis process by allowing users to interact with visual data directly, without needing to write SQL queries.
 This addition would enhance the project's usability, turning it into a more dynamic business intelligence tool where data-driven decisions can be made quickly and effectively. Integrating dashboards would also make it easier to share insights across teams and departments.
